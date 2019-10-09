@@ -74,7 +74,7 @@ function App() {
         words.push(<br/>);
         a = state.text[i + state.chunk];
       }
-      words.push(<span className="word" key={i}>{a}&nbsp;</span>);
+      words.push(<span className="word" key={i} id={i}>{a}&nbsp;</span>);
     }
 
     return words;
@@ -106,7 +106,7 @@ function App() {
               <Grid item xs={6} className="steps">
                 <Button onClick={_handleNext} className="step-button" disableRipple>Next</Button>
               </Grid>
-              <Grid item xs={12} className="words">
+              <Grid item xs={12}>
                 <Slider
                   defaultValue={1}
                   step={1}

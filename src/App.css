@@ -23,6 +23,8 @@
 .words {
   text-align: left;
   min-height: 30vh;
+  max-height: 60vh;
+  overflow: auto;
 }
 
 .word {
